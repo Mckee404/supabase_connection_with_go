@@ -1,0 +1,11 @@
+### DockerからリモートのSupabaseに接続する場合
+
+IPv6ではなく、IPv4を利用する
+
+1. プロジェクトのダッシュボードのヘッダーにあるConnectをクリック
+2. 表示されたダイアログ内のTransaction poolerまたはSession poolerのURIを利用して接続する
+
+
+Direct connectionのURIではIPv6による接続となるが、コンテナの実行環境によってIPv6接続の可否が変化し、IPv6接続には別途設定が必要。
+
+環境を統一しやすいというコンテナのメリットが失われるのでIPv4で接続するのが丸い。
